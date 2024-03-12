@@ -1,8 +1,6 @@
 # Wish.com [https://www.wish.com/]
 ## Define the problem
-* The dataset is the wish.com product dataset
-* the dataset has alot of noise and missing values and a lot of things need to data preprocessing
-* **the problem is** i have some features for the product and i need to predict the product rating to help Wish.com to know if this priduct will be good for people or not to publish the product on the website or not 
+* ### The dataset is the wish.com product dataset. i collected the data combined with some available data. Some nosies are added to the dataset.` The goal is to predict the product ratings` given the other features known for a product on Wish.com. `Ratings are in categories from 1 to 5.` For one product, the higher the rating is, the more the customers like the product. In this way, when you have a new product to be put on wish.com, you can estimate how likely people will like your product, without actually listing out there. Also, by doing this, it helps us to understand under what certain conditions that a product will be highly rated, as a way to understand the customer base of the wish.com
 
 ---
 # goal
@@ -60,6 +58,10 @@ the input is the features of the product to predict the rating value but the mod
 the out put is the prediction `rating for the input product`
 
 ---------------------------------
+# evaluation metric
+
+### The evaluation metric for this competition is Mean ` F1-Score`. The F1 score, commonly used in information retrieval, measures accuracy using the statistics` precision p and recall r`. Precision is the ratio of true positives (tp) to all predicted positives (tp + fp). Recall is the ratio of true positives to all actual positives (tp + fn).
+
 ## Just want to quickly look at some notebooks, without executing any code?
 
 * <a href="https://github.com/AhemdMahmoud/Wish.com/blob/main/Wish_com.ipynb"><img src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg" alt="Render nbviewer" /></a>
