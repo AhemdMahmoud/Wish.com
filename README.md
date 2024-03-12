@@ -1,4 +1,4 @@
-# Wish.com 
+# Wish.com [https://www.wish.com/]
 ## Define the problem
 * The dataset is the wish.com product dataset
 * the dataset has alot of noise and missing values and a lot of things need to data preprocessing
@@ -52,7 +52,8 @@ the input is the features of the product to predict the rating value but the mod
 
 * `merchant_rating` : merchant's rating
 * `Merchant Has Profile Picture`: Indicates whether the merchant selling the product has a profile picture on the platform.
-## Note: Not all the columns are present in the above description
+  
+## ⚠ _ Note: Not all the columns are present in the above description
 
 
 ## What is the output?
