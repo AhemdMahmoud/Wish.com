@@ -9,41 +9,50 @@
 * The goal is to predict product ratings based on other information available about a product on Wish.com. The rating range from 1 to 5. The higher the rating for a product, the more satisfied for the customers. When you have a new product to list on wish.com, you may use this model to predict how probable people will like it before actually listing it. Also , by doing so, we may better determine under what circumstances a product will be highly rated, as well as the wish.com consumer base.
 # what is the input 
 the input is the features of the product to predict the rating value but the model will select this features from the data input
-* `Price`: The amount of money charged for a product on the Wish platform.
 
-* `Retail Price`: The standard or suggested retail price for the product, often used for comparison with the discounted price on Wish.
+* `price` : price for the buyer
 
-* `Units Sold`: The number of units of the product that have been sold on the Wish platform.
+* `retail_price `: Retail price, or reference price in other stores/places. Used by the seller to indicate a regular value or the price before discount.
 
-* `Uses Ad Boosts`: Indicates whether the product listing utilizes advertising boosts to increase its visibility on the Wish platform.
+* `currency_buyer` : currency of the prices
 
-* `Rating`: The average rating given to the product by customers who have purchased and reviewed it.
+* `units_sold` : Number of units sold. Lower bound approximation by steps
 
-*` Rating Count`: The total number of ratings and reviews received for the product.
+* `uses_ad_boosts `: Whether the seller paid to boost his product within the platform (highlighting, better placement or whatever).
 
-*` Badges Count`: The number of badges or certifications associated with the product, indicating certain attributes like quality or fast shipping.
+* `rating` : Mean product rating.
 
-* `Badge Product Quality`: A badge indicating the perceived quality of the product.
+* `rating_count` : Total number of ratings of the product
 
-*` Badge Fast Shipping`: A badge indicating that the product comes with fast shipping options.
+* `badges_count` : Number of badges the product or the seller have.
 
-* `Product Color`: The color or colors available for the product.
+* `badge_local_product` : A badge that denotes the product is a local product. Conditions may vary (being produced locally, or something else). Some people may prefer buying local products rather than. 1 means Yes, has the badge.
 
-*` Product Variation Size ID`: An identifier for different sizes or variations of the product.
+* `badge_product_quality `: Badge awarded when many buyers consistently gave good evaluations 1 means Yes, has the badge
 
-*` Product Variation Inventory`: The quantity of each size or variation available in stock.
+* `badge_fast_shipping `: Badge awarded when this product's order is consistently shipped rapidly
 
-* `Shipping Option Price`: The cost of shipping the product to the buyer.
+* `tags` : tags set by the seller
 
-* `Has Urgency Banner`: Indicates whether the product listing includes an urgency banner, often used to create a sense of urgency for potential buyers.
+* `product_color` : Product's main color
 
-* `Origin Country`: The country where the product is manufactured or sourced from.
+* `product_variation_size_id` : One of the available size variation for this product
 
-* `Merchant Rating Count`: The total number of ratings and reviews received by the merchant selling the product.
+* `product_variation_inventory` : Inventory the seller has. Max allowed quantity is 50
 
-* `Merchant Rating`: The average rating of the merchant selling the product.
+* `shipping_option_price `: shipping price
 
+* `shipping_is_express` : whether the shipping is express or not. 1 for True
+
+* `countries_shipped_to` : Number of countries this product is shipped to. Sellers may choose to limit where they ship a product to
+
+* `inventory_total` : Total inventory for all the product's variations (size/color variations for instance)
+
+* `has_urgency_banner` : whether there was an urgency banner with an urgency
+
+* `merchant_rating` : merchant's rating
 * `Merchant Has Profile Picture`: Indicates whether the merchant selling the product has a profile picture on the platform.
+## Note: Not all the columns are present in the above description
 
 
 ## What is the output?
