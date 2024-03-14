@@ -8,48 +8,31 @@
 # what is the input 
 the input is the features of the product to predict the rating value but the model will select this features from the data input
 
-* `price` : price for the buyer
+|Column                           | Description                                                                                   |
+|--------------------------------|-----------------------------------------------------------------------------------------------|
+| price                          | Price for the buyer                                                                          |
+| retail_price                   | Retail price, or reference price in other stores/places. Used by the seller to indicate a regular value or the price before discount.                   |
+| currency_buyer                 | Currency of the prices                                                                       |
+| units_sold                     | Number of units sold. Lower bound approximation by steps                                      |
+| uses_ad_boosts                | Whether the seller paid to boost his product within the platform (highlighting, better placement or whatever). |
+| rating                         | Mean product rating                                                                          |
+| rating_count                   | Total number of ratings of the product                                                       |
+| badges_count                   | Number of badges the product or the seller have.                                             |
+| badge_local_product            | A badge that denotes the product is a local product. Conditions may vary (being produced locally, or something else). Some people may prefer buying local products rather than. 1 means Yes, has the badge. |
+| badge_product_quality          | Badge awarded when many buyers consistently gave good evaluations. 1 means Yes, has the badge |
+| badge_fast_shipping            | Badge awarded when this product's order is consistently shipped rapidly                       |
+| tags                           | Tags set by the seller                                                                       |
+| product_color                  | Product's main color                                                                         |
+| product_variation_size_id      | One of the available size variations for this product                                         |
+| product_variation_inventory    | Inventory the seller has. Max allowed quantity is 50                                           |
+| shipping_option_price          | Shipping price                                                                                |
+| shipping_is_express            | Whether the shipping is express or not. 1 for True                                            |
+| countries_shipped_to           | Number of countries this product is shipped to. Sellers may choose to limit where they ship a product to |
+| inventory_total                | Total inventory for all the product's variations (size/color variations for instance)         |
+| has_urgency_banner             | Whether there was an urgency banner with an urgency                                           |
+| merchant_rating                | Merchant's rating                                                                            |
+| Merchant Has Profile Picture   | Indicates whether the merchant selling the product has a profile picture on the platform      |
 
-* `retail_price `: Retail price, or reference price in other stores/places. Used by the seller to indicate a regular value or the price before discount.
-
-* `currency_buyer` : currency of the prices
-
-* `units_sold` : Number of units sold. Lower bound approximation by steps
-
-* `uses_ad_boosts `: Whether the seller paid to boost his product within the platform (highlighting, better placement or whatever).
-
-* `rating` : Mean product rating.
-
-* `rating_count` : Total number of ratings of the product
-
-* `badges_count` : Number of badges the product or the seller have.
-
-* `badge_local_product` : A badge that denotes the product is a local product. Conditions may vary (being produced locally, or something else). Some people may prefer buying local products rather than. 1 means Yes, has the badge.
-
-* `badge_product_quality `: Badge awarded when many buyers consistently gave good evaluations 1 means Yes, has the badge
-
-* `badge_fast_shipping `: Badge awarded when this product's order is consistently shipped rapidly
-
-* `tags` : tags set by the seller
-
-* `product_color` : Product's main color
-
-* `product_variation_size_id` : One of the available size variation for this product
-
-* `product_variation_inventory` : Inventory the seller has. Max allowed quantity is 50
-
-* `shipping_option_price `: shipping price
-
-* `shipping_is_express` : whether the shipping is express or not. 1 for True
-
-* `countries_shipped_to` : Number of countries this product is shipped to. Sellers may choose to limit where they ship a product to
-
-* `inventory_total` : Total inventory for all the product's variations (size/color variations for instance)
-
-* `has_urgency_banner` : whether there was an urgency banner with an urgency
-
-* `merchant_rating` : merchant's rating
-* `Merchant Has Profile Picture`: Indicates whether the merchant selling the product has a profile picture on the platform.
   
 ## ⚠ _ Note: Not all the columns are present in the above description
 
