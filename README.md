@@ -1,12 +1,14 @@
-# Wish.com [https://www.wish.com/]
-## Define the problem
+# Wish.com [https://www.wish.com/] 🎉
+![](https://github.com/AhemdMahmoud/Wish.com/blob/main/represent_Image.jpg)
+
+# Define the problem 🐱‍🚀
 * ### The dataset is the wish.com product dataset. i collected the data combined with some available data. Some nosies are added to the dataset.` The goal is to predict the product ratings` given the other features known for a product on Wish.com. `Ratings are in categories from 1 to 5.` For one product, the higher the rating is, the more the customers like the product. In this way, when you have a new product to be put on wish.com, you can estimate how likely people will like your product, without actually listing out there. Also, by doing this, it helps us to understand under what certain conditions that a product will be highly rated, as a way to understand the customer base of the wish.com
 
 ---
-# goal
-* The goal is to predict product ratings based on other information available about a product on Wish.com. The rating range from 1 to 5. The higher the rating for a product, the more satisfied for the customers. When you have a new product to list on wish.com, you may use this model to predict how probable people will like it before actually listing it. Also , by doing so, we may better determine under what circumstances a product will be highly rated, as well as the wish.com consumer base.
-# what is the input 
-the input is the features of the product to predict the rating value but the model will select this features from the data input
+# Goal ✔🎁
+* ## The goal is to `predict product ratings` based on other information available about a product on Wish.com. The rating range from 1 to 5. The higher the rating for a product, the more satisfied for the customers. When you have a new product to list on wish.com, you may use this model to predict how probable people will like it before actually listing it. Also , by doing so, we may better determine under what circumstances a product will be highly rated, as well as the wish.com consumer base.
+# what is the input 🤳
+the input is the features of the product to predict the rating value but the model will select this features from the data input 🐱‍💻
 
 |Column                           | Description                                                                                   |
 |--------------------------------|-----------------------------------------------------------------------------------------------|
@@ -34,14 +36,14 @@ the input is the features of the product to predict the rating value but the mod
 | Merchant Has Profile Picture   | Indicates whether the merchant selling the product has a profile picture on the platform      |
 
   
-## ⚠ _ Note: Not all the columns are present in the above description
+## ⚠ _ Note: Not all the columns are present in the above description🤢
 
 
-## What is the output?
-the out put is the prediction `rating for the input product`
+# What is the output? 🎂
+ ### :the out put is the prediction `rating for the input product`
 
 ---------------------------------
-# evaluation metric
+# evaluation metric 🎶
 
 ### The evaluation metric for this competition is Mean ` F1-Score`. The F1 score, commonly used in information retrieval, measures accuracy using the statistics` precision p and recall r`. Precision is the ratio of true positives (tp) to all predicted positives (tp + fp). Recall is the ratio of true positives to all actual positives (tp + fn).
 ### The F1 metric weights recall and precision equally, and a good retrieval algorithm `will maximize both` precision and recall simultaneously. Thus, moderately good performance on both will be favored over extremely good performance on one and poor performance on the other
