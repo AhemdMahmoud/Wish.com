@@ -1,4 +1,5 @@
-# Wish.com [https://www.wish.com/] 🎉
+# [Click here to open Wish.com ](https://www.wish.com/) 🎉
+
 ![](https://github.com/AhemdMahmoud/Wish.com/blob/main/represent_Image.jpg)
 
 # Define the problem 🐱‍🚀
@@ -51,3 +52,6 @@ the input is the features of the product to predict the rating value but the mod
 ## Just want to quickly look at some notebooks, without executing any code?
 
 * <a href="https://github.com/AhemdMahmoud/Wish.com/blob/main/Wish_com.ipynb"><img src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg" alt="Render nbviewer" /></a>
+
+* [Click here to open in Google Colab](https://colab.research.google.com/drive/1SBx_f9-fCHKWf7Cr3NNXj1MfyCnhMmNj)
+
